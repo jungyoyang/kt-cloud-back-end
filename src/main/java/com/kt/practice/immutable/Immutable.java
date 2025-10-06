@@ -1,6 +1,6 @@
 package com.kt.practice.immutable;
 
-public class immutable {
+public class Immutable {
 	// immutable: 불변의, 변경할 수 없는
 	// mutable: 변경할 수 있는
 
