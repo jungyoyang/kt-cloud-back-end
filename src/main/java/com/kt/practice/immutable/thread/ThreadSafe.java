@@ -1,4 +1,4 @@
-package com.kt.practice.immutable;
+package com.kt.practice.immutable.thread;
 
 public class ThreadSafe {
 	public static void main(String[] args) {
