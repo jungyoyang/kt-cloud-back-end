@@ -6,6 +6,8 @@ public class MeterMain {
 		System.out.println("Default Meter Measurement: " + defaultMeter.measure());
 		System.out.println("Default Meter Result: " + defaultMeter.result());
 
+		/* todo */
+
 		MeterModernJavaInterface meter = MeterModernJavaInterface.of(250.5);
 
 		System.out.println("Modern Java Meter Measurement: " + meter.measure());
