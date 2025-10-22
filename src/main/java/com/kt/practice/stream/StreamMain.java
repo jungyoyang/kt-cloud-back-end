@@ -30,7 +30,7 @@ public class StreamMain {
 		//알파벳 e가 들어간 이름들만 모아서 출력 (filter)
 
 		//names를 복사해서 새로운 것 생성
-		names.stream().filter()
+		var newNames = names.stream().filter(name -> name.contains("e"))
 
 		//jdk8부터 stream
 		//jdk11부터
