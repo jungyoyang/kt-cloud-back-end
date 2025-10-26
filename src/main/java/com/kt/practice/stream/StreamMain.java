@@ -24,13 +24,14 @@ public class StreamMain {
 		 * ex) 객체.stream생성().중간연산.최종연산()
 		 */
 
-		List<String> names = List.of("Alice", "Bob", "Charlie", "David", "Eve");
-		names.add("Frank"); // 오류가 난다, 이유는 List.of가 불변이기 때문
+		List<String> names = List.of("Alice", "Bob", "Charlie");
+		names.add("Frank"); //UnsupportedOperationException, of는 immutable이기 때문ㅇ
 
 		//알파벳 e가 들어간 이름들만 모아서 출력 (filter)
+		names.stream().filter().
 
-		//names를 복사해서 새로운 것 생성
-		var newNames = names.stream().filter(name -> name.contains("e"))
+			//names를 복사해서 새로운 것 생성
+			var newNames = names.stream().filter(name -> name.contains("e"))
 
 		//jdk8부터 stream
 		//jdk11부터
