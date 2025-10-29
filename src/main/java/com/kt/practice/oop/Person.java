@@ -1,25 +1,29 @@
 package com.kt.practice.oop;
 
-// abstract => class, interface
-// 추상 클래스 => 미완성 클래스 -> 확장해서 마저 구현 -> extends
-// 속성을 공유하기 위해서 사용
-// 인터페이스 -> 규격(행동)을 정의 -> implements -> 실행하다(구현)
-// 일관성 코드 작성
-// 객체 하나하나가 가벼워지기 때문에 유지보수에도 용이하다.
-public abstract class Person implements PersonFunction {
-	protected int age;
-	protected String name;
-	protected String identity;
+public class Person {
+	//멤버변수(인스턴스변수), 프로퍼티(속성)
+	private int age;
+	private String name;
+	private String identity;
 
-	public Person(int age, String name, String identity) {
+	//캡슐화는 최소화된 정보만 알려주는건데,
+	//지금 이상태에서는 최소한의 정보도 모른다
+
+	//public으로 메서드의 행동을 정의한거다, 알려줄수있어(public) 라고
+	public int getAge() {
+		return age;
+	}
+
+	public int getName() {
+		return age;
+	}
+
+	public void setAge(int age) {
 		this.age = age;
-		this.name = name;
-		this.identity = identity;
 	}
 
-	public String getName() {
-		return name;
+	public void changeAge(int age) {
+		this.age = age;
 	}
 
-	// new ... 사용하기위해서
 }
