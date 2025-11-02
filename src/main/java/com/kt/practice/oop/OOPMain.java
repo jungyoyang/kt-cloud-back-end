@@ -36,7 +36,7 @@ public class OOPMain {
 		// protected => 같은 패키지 내에서는 모두 접근 가능 + 상속관계에 있는 자식 클래스는 다른 패키지에서도 접근 가능
 		// default => 같은 패키지 내에서만 접근 가능 (아무것도 안쓰면 디폴트)
 
-		var p1 = new Person();
+		var p1 = new CheolHo();
 		p1.getName();
 		p1.getAge();
 

@@ -1,25 +1,21 @@
 package com.kt.practice.oop;
 
-public class NaHyeon extends Person {
-	// 멤버변수 , 프로퍼티(속성)
-	private String student;
-	private String glass;
+public class NaHyeon {
+	//멤버변수(인스턴스변수), 프로퍼티(속성)
+	private int age;
+	private String name;
+	private String identity;
 
-	public NaHyeon(int age, String name, String identity, String student, String glass) {
-		super(age, name, identity);
-		this.student = student;
-		this.glass = glass;
-	}
+	//캡슐화는 최소화된 정보만 알려주는건데,
+	//지금 이상태에서는 최소한의 정보도 모른다
 
-	// 기본생성자 (생략)
-	// 생성자
-
+	//public으로 메서드의 행동을 정의한거다, 알려줄수있어(public) 라고
 	public int getAge() {
 		return age;
 	}
 
-	public String getName() {
-		return name;
+	public int getName() {
+		return age;
 	}
 
 	public void setAge(int age) {
@@ -30,20 +26,4 @@ public class NaHyeon extends Person {
 		this.age = age;
 	}
 
-	@Override
-	public void eat() {
-
-	}
-
-	@Override
-	public void sleep() {
-
-	}
-
-	@Override
-	public void walk() {
-
-	}
-
-	// 자바의 관례
 }
